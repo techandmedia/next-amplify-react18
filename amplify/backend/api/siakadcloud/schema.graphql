@@ -1,0 +1,43 @@
+type PublicBlog @model @auth(rules: [{ allow: public, operations: [read] }, { allow: owner }]) {
+  id: ID!
+  name: String!
+  posts: [PublicPost] @hasMany(indexName: "byPublicBlog", fields: ["id"])
+}
+
+type PublicPost @model @auth(rules: [{ allow: public, operations: [read] }, { allow: owner }]) {
+  id: ID!
+  blogID: ID! @index(name: "byPublicBlog")
+  comments: [PublicComment] @hasMany(indexName: "byPublicPost", fields: ["id"])
+  title: String!
+  PublicBlog: PublicBlog @belongsTo
+  content: String
+}
+
+type PublicComment @model @auth(rules: [{ allow: public, operations: [read] }, { allow: owner }]) {
+  id: ID!
+  postID: ID! @index(name: "byPublicPost")
+  comment: String!
+  PublicPost: PublicPost @belongsTo
+}
+
+type PrivateBlog @model @auth(rules: [{ allow: owner }]) {
+  id: ID!
+  name: String!
+  posts: [PrivatePost] @hasMany(indexName: "byPrivateBlog", fields: ["id"])
+}
+
+type PrivatePost @model @auth(rules: [{ allow: owner }]) {
+  id: ID!
+  blogID: ID! @index(name: "byPrivateBlog")
+  comments: [PrivateComment] @hasMany(indexName: "byPrivatePost", fields: ["id"])
+  title: String!
+  PrivateBlog: PrivateBlog @belongsTo
+  content: String
+}
+
+type PrivateComment @model @auth(rules: [{ allow: owner }]) {
+  id: ID!
+  postID: ID! @index(name: "byPrivatePost")
+  comment: String!
+  PrivatePost: PrivatePost @belongsTo
+}

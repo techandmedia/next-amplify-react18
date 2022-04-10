@@ -1,0 +1,29 @@
+projects:
+  SiakadCloud:
+    schemaPath: amplify/backend/api/SiakadCloud/build/schema.graphql
+    includes:
+      - src/graphql/**/*.ts
+    excludes:
+      - ./amplify/**
+    extensions:
+      amplify:
+        codeGenTarget: typescript
+        generatedFileName: src/API.ts
+        docsFilePath: src/graphql
+        region: ap-southeast-1
+        apiId: null
+        maxDepth: 3
+  siakadcloud:
+    schemaPath: src/graphql/schema.json
+    includes:
+      - src/graphql/**/*.ts
+    excludes:
+      - ./amplify/**
+    extensions:
+      amplify:
+        codeGenTarget: typescript
+        generatedFileName: src/API.ts
+        docsFilePath: src/graphql
+extensions:
+  amplify:
+    version: 3

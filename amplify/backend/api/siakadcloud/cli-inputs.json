@@ -1,0 +1,27 @@
+{
+  "version": 1,
+  "serviceConfiguration": {
+    "apiName": "siakadcloud",
+    "serviceName": "AppSync",
+    "gqlSchemaPath": "/tmp/amplify-ebc9a0ad-32cd-4dae-a397-7c0908ac502d/amplify/backend/api/siakadcloud/schema.graphql",
+    "defaultAuthType": {
+      "mode": "API_KEY",
+      "keyDescription": "api key description",
+      "expirationTime": 30
+    },
+    "conflictResolution": {
+      "defaultResolutionStrategy": {
+        "type": "AUTOMERGE"
+      }
+    },
+    "additionalAuthTypes": [
+      {
+        "mode": "AWS_IAM"
+      },
+      {
+        "mode": "AMAZON_COGNITO_USER_POOLS",
+        "cognitoUserPoolId": "authsiakadcloud0d7ceee8"
+      }
+    ]
+  }
+}

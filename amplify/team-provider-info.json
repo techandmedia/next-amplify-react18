@@ -1,0 +1,56 @@
+{
+  "prod": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-siakadcloud-prod-115742-authRole",
+      "UnauthRoleArn": "arn:aws:iam::845018576743:role/amplify-siakadcloud-prod-115742-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::845018576743:role/amplify-siakadcloud-prod-115742-authRole",
+      "Region": "ap-southeast-1",
+      "DeploymentBucketName": "amplify-siakadcloud-prod-115742-deployment",
+      "UnauthRoleName": "amplify-siakadcloud-prod-115742-unauthRole",
+      "StackName": "amplify-siakadcloud-prod-115742",
+      "StackId": "arn:aws:cloudformation:ap-southeast-1:845018576743:stack/amplify-siakadcloud-prod-115742/1f20b530-a457-11ec-83a6-0aef6a2bd4d6",
+      "AmplifyAppId": "d2cc2wfah4vooz"
+    },
+    "categories": {
+      "auth": {
+        "siakadcloud0d7ceee8": {}
+      }
+    }
+  },
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-siakadcloud-dev-115734-authRole",
+      "UnauthRoleArn": "arn:aws:iam::845018576743:role/amplify-siakadcloud-dev-115734-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::845018576743:role/amplify-siakadcloud-dev-115734-authRole",
+      "Region": "ap-southeast-1",
+      "DeploymentBucketName": "amplify-siakadcloud-dev-115734-deployment",
+      "UnauthRoleName": "amplify-siakadcloud-dev-115734-unauthRole",
+      "StackName": "amplify-siakadcloud-dev-115734",
+      "StackId": "arn:aws:cloudformation:ap-southeast-1:845018576743:stack/amplify-siakadcloud-dev-115734/1a30d280-a457-11ec-9431-0a2115094530",
+      "AmplifyAppId": "d2cc2wfah4vooz"
+    },
+    "categories": {
+      "auth": {
+        "siakadcloud0d7ceee8": {}
+      }
+    }
+  },
+  "staging": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-siakadcloud-staging-114423-authRole",
+      "UnauthRoleArn": "arn:aws:iam::845018576743:role/amplify-siakadcloud-staging-114423-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::845018576743:role/amplify-siakadcloud-staging-114423-authRole",
+      "Region": "ap-southeast-1",
+      "DeploymentBucketName": "amplify-siakadcloud-staging-114423-deployment",
+      "UnauthRoleName": "amplify-siakadcloud-staging-114423-unauthRole",
+      "StackName": "amplify-siakadcloud-staging-114423",
+      "StackId": "arn:aws:cloudformation:ap-southeast-1:845018576743:stack/amplify-siakadcloud-staging-114423/42ba16f0-a455-11ec-9820-020292bd8458",
+      "AmplifyAppId": "d2cc2wfah4vooz"
+    },
+    "categories": {
+      "auth": {
+        "siakadcloud0d7ceee8": {}
+      }
+    }
+  }
+}
