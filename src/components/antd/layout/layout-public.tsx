@@ -12,7 +12,7 @@ interface ILayout {
 }
 
 export default function PublicLayout(props: ILayout) {
-  const menuHeader = headerMenus();
+  const menuHeader = headerMenus(props.user);
 
   return (
     <Layout>

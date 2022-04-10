@@ -32,6 +32,18 @@ const tailFormItemLayout = {
       span: 2,
       offset: 2,
     },
+    md: {
+      span: 2,
+      offset: 6,
+    },
+    lg: {
+      span: 2,
+      offset: 6,
+    },
+    xl: {
+      span: 2,
+      offset: 4,
+    },
   },
 };
 
